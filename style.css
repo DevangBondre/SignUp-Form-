@@ -67,3 +67,33 @@ body{
     margin-top: 330px;
 }
 
+.intro{
+    color: red;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.allContent{
+    display: flex;
+    
+}
+
+.form{
+    color: red;
+    
+    font-size: 2em;
+
+}
+
+.signup{
+    text-align: center;
+    font-weight: bold;
+    margin-right: 70px;
+}
+
+.name{
+    font-size: 0.7em;
+   
+    margin-left: 30px;
+    
+}
