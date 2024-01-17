@@ -80,7 +80,6 @@ body{
 
 .form{
     color: red;
-    
     font-size: 2em;
 
 }
@@ -91,9 +90,54 @@ body{
     margin-right: 70px;
 }
 
-.name{
+.name, .email {
     font-size: 0.7em;
-   
-    margin-left: 30px;
+    margin-left: 120px;
     
+}
+
+.email{
+    margin-top: 20px;
+}
+
+.phoneNo{
+    margin-top: 20px;
+    font-size: 0.7em;
+    font-size: 0.7em;
+    margin-left: 87px;
+}
+
+.dob{
+    margin-top: 20px;
+    font-size: 0.7em;
+    margin-left: 23px;
+}
+
+#favGame{
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.password{
+    margin-top: 20px;
+    font-size: 0.7em;
+    margin-left: 69px;
+}
+
+
+
+.signupBtn{
+    text-align: center;
+    font-size: 0.7em;
+    border: 2px solid black;
+    border-radius: 11px;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    transition: transform 0.2s;
+    background-color: cyan;
+}
+
+.signupBtn:hover{
+    transform:scale(1.2 );
 }
