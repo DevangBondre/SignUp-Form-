@@ -26,10 +26,39 @@
     </div>
     <div class="intro">
         <h1><b><u>Welcome To The Gaming Paradise ! <br> I Heartly Congratulate You That You Made It Here!</u></b></h1><br>
-        <h1 class="signup"> <u>Sign Up Now ! </u> </h1> <br>
+       
         <div class="form">
-            <label for="name"> <u><b>Name</b></u> : </label>
-            <input class="name"  type="text" name="name" id="name" placeholder=" Enter your name">
+            <form action="" method="post">
+                <div >
+            <label for="name"> *<u><b>Name</b></u> : </label>
+            <input class="name"  type="text" name="name" id="name" placeholder=" Enter your name" required>
+            </div>
+            
+            <div>
+            <label for="email">*<u><b>Email </b></u> : </label> 
+            <input type="email" class="email" name = "email" placeholder="xyz@gmail.com" required>
+            </div>
+            <div>
+                <label for="password">*<b><u>Password</u></b> : </label>
+                <input type="password" class="password" placeholder="Enter your password" required>
+            </div>
+            <div>
+                <label for="dob">*<u><b>Date of Birth </b></u> : </label>
+                <input type="date" name="dob" class="dob" required>
+            </div>
+            <div>
+                <label for="phoneNo"><u><b>Phone No </b></u> : </label>
+                <input type="number" class="phoneNo" placeholder="Enter you phone number ">
+            </div><br>
+        
+        <div class="textarea">
+            <label for="myTextarea"></label>
+            <textarea name="favGame" id="favGame" cols="50" rows="3" placeholder="What's your top 5 games of all time ?  "></textarea>
+        </div>
+    </form>
+    <div class="signUpBtnDiv">
+    <button class="signupBtn"><b>Sign Up</b></button>
+    </div>
         </div>
 
     </div>
