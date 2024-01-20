@@ -17,11 +17,11 @@
 <div class="allContent">
 
     <div class="images">
-       <img src="images/red-dead-redemption-2-review_81k9.jpeg" alt="rdr2" class="rdr2">
-       <img src="images/ac.jpeg" alt="ac" class="ac">
-       <img src="images/elden.jpeg" alt="elden" class="elden">
-       <img src="images/masseffect.jpeg" alt="mass" class="mass">
-       <img src="images/witcher3.jpeg" alt="witcher" class="witcher">
+       <img src="images/red-dead-redemption-2-review_81k9.jpeg" alt="rdr2" class="rdr2" draggable="false">
+       <img src="images/ac.jpeg" alt="ac" class="ac" draggable="false">
+       <img src="images/elden.jpeg" alt="elden" class="elden" draggable="false">
+       <img src="images/masseffect.jpeg" alt="mass" class="mass" draggable="false">
+       <img src="images/witcher3.jpeg" alt="witcher" class="witcher" draggable="false">
        
     </div>
     <div class="intro">
@@ -49,21 +49,26 @@
             <div>
                 <label for="phoneNo"><u><b>Phone No </b></u> : </label>
                 <input type="number" class="phoneNo" placeholder="Enter you phone number ">
-            </div><br>
+            </div><br> 
         
         <div class="textarea">
             <label for="myTextarea"></label>
             <textarea name="favGame" id="favGame" cols="50" rows="3" placeholder="What's your top 5 games of all time ?  "></textarea>
         </div>
-    </form>
+   
     <div class="signUpBtnDiv">
-    <button class="signupBtn"><b>Sign Up</b></button>
+    <button class="signupBtn" id="signupBtn"><b>Sign Up</b></button>
     </div>
         </div>
 
     </div>
-
-    
+</form>
+    <div class="popup">
+        <img src="images/images.jpeg" class="tick">
+        <h1 class="thankyou">Thank You ! </h1>
+        <h2 class="successfull">You have successfully signed up ! </h2>
+        <button class="home">OK!</button>
+    </div>
 </div>
 
     <script src="script.js"></script>
