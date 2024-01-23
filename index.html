@@ -40,7 +40,8 @@
             </div>
             <div>
                 <label for="password">*<b><u>Password</u></b> : </label>
-                <input type="password" class="password" placeholder="Enter your password" required id="password">
+                <input type="password" class="password" placeholder="Enter your password" required id="password"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$" title="Please include at least 1 uppercase letter, 1 lowercase letter, 1 special character, and 1 number.">
             </div>
             <div>
                 <label for="dob">*<u><b>Date of Birth </b></u> : </label>
