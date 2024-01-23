@@ -1,29 +1,27 @@
-let submit = document.getElementById("signupBtn")
+function validateForm(event) {
+    event.preventDefault();
 
-submit.addEventListener('click',validation)
+    let nameInput = document.getElementById('name');
+    let emailInput = document.getElementById('email');
+    let passwordInput = document.getElementById('password');
+    let dobInput = document.getElementById('dob');
+    let phoneNoInput = document.getElementById('phoneNo');
 
-function validation(){
+    var isValid = true;
 
-let name = document.getElementById("name")
-let password = document.getElementById("password")
-let dob = document.getElementById("dob")
-let email = document.getElementById("email")
-let phoneno = document.getElementById("phoneNo")
-let popup =document.getElementById("popup") 
-
-   if(name.value ===""|| password.value === "" || dob.value ==="" || email.value === ""){
-       alert("Please fill the required fields")
-   }
-   else{
-
-   }    
-
-   if(name.value !== "" && password.value !== "" && dob.value !== "" && email.value !== "" && phoneno.value !== ""  ){
-    // popup.style.transform = 'translate(-50%, -50%) scale(1)';
-    popup.style.visibility = 'visible';
-   }
-   else{
-
-   }
+    
+    if (isValid) {
+        let popup = document.getElementById('popup');
+       
+        popup.style.top = '50%'; 
+        popup.style.transform = 'translate(-50%,-50%)scale(1)';
+        popup.style.visibility = 'visible';
+    }
 }
 
+function closePopup() {
+    let popup = document.getElementById('popup');
+     
+    popup.style.top = '0'; 
+    popup.style.visibility = 'hidden';
+}
