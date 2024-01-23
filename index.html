@@ -26,17 +26,17 @@
     </div>
     <div class="intro">
         <h1><b><u>Welcome To The Gaming Paradise ! <br> I Heartly Congratulate You That You Made It Here!</u></b></h1><br>
-       
+      
         <div class="form">
-            <form method="post">
+            <form method="post" onsubmit="validateForm(event)">
                 <div >
             <label for="name"> *<u><b>Name</b></u> : </label>
-            <input class="name"  type="text" name="name" id="name" placeholder=" Enter your name" required>
+            <input class="name"  type="text" name="name" id="name" minlength="2" maxlength="15" placeholder=" Enter your name" required>
             </div>
             
             <div>
             <label for="email">*<u><b>Email </b></u> : </label> 
-            <input type="email" class="email" name = "email" placeholder="xyz@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"required id="email">
+            <input type="email" class="email" name = "email" placeholder="xyz@gmail.com" required id="email">
             </div>
             <div>
                 <label for="password">*<b><u>Password</u></b> : </label>
@@ -66,12 +66,14 @@
         <img src="images/images.jpeg" class="tick">
         <h1 class="thankyou">Thank You ! </h1>
         <h2 class="successfull">You have successfully signed up ! </h2>
-        <button class="home">OK!</button>
+        <button class="home" id="home" type="button" onclick="closePopup()">OK!</button>
 
     </form>
     </div>
     </div>
 </div>
+
+
 
     <script src="script.js"></script>
 
