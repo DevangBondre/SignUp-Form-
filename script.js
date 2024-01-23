@@ -1,12 +1,6 @@
 function validateForm(event) {
     event.preventDefault();
 
-    let nameInput = document.getElementById('name');
-    let emailInput = document.getElementById('email');
-    let passwordInput = document.getElementById('password');
-    let dobInput = document.getElementById('dob');
-    let phoneNoInput = document.getElementById('phoneNo');
-
     var isValid = true;
 
     
